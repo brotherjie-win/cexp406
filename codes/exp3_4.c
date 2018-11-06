@@ -25,7 +25,7 @@ int main()
 		system("pause");
 		exit(0);
 	}
-	if (a = 1)
+	if (a == 1)
 	{
 		printf("您输入的数既不是质数也不是合数！\n");
 		system("pause");
