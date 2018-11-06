@@ -4,7 +4,7 @@
 #include<math.h>
 int isPrime(int a)
 {
-	
+
 	for (int k = 2; k <= (int)sqrt(a); k++)
 	{
 		if (a%k == 0)
@@ -16,29 +16,29 @@ int isPrime(int a)
 }
 int main()
 {
-	printf("璇疯緭鍏ヤ竴涓鏁存暟\n");
+	printf("请输入一个正整数\n");
 	int a;
 	scanf("%d", &a);
 	if (a <= 0)
 	{
-		printf("杈撳叆閿欒锛乗n");
+		printf("输入错误！\n");
 		system("pause");
 		exit(0);
 	}
-	if (a == 1)
+	if (a = 1)
 	{
-		printf("鎮ㄨ緭鍏ョ殑鏁版棦涓嶆槸璐ㄦ暟涔熶笉鏄悎鏁帮紒\n");
+		printf("您输入的数既不是质数也不是合数！\n");
 		system("pause");
 		exit(0);
 	}
 	int r = isPrime(a);
 	if (r == 0)
 	{
-		printf("鎮ㄨ緭鍏ョ殑鏁颁笉鏄川鏁帮紒\n");
+		printf("您输入的数不是质数！\n");
 	}
 	else if (r == 1)
 	{
-		printf("鎮ㄨ緭鍏ョ殑鏁版槸璐ㄦ暟锛乗n");
+		printf("您输入的数是质数！\n");
 	}
 	system("pause");
 	return 0;
